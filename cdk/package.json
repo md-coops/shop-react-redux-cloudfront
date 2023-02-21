@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
+    "deploy": "cdk deploy --profile=default --require-approval=never",
     "cdk": "cdk",
     "synth": "cdk synth"
   },
