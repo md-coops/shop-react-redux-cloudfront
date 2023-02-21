@@ -1,0 +1,621 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MyStoreStaticWebsite": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyStoreStaticWebsite.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/MyStoreStaticWebsite": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73.zip",
+              "id": "fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73",
+              "packaging": "file",
+              "sourceHash": "fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73",
+              "s3BucketParameter": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73S3Bucket6FE8CBF7",
+              "s3KeyParameter": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73S3VersionKey71C12446",
+              "artifactHashParameter": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73ArtifactHashE5DCACB4"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new LayerVersion (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/layers.js:47:33)",
+              "new AwsCliLayer (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:81:22)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "id": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "packaging": "zip",
+              "sourceHash": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "s3BucketParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+              "s3KeyParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+              "artifactHashParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82",
+              "id": "0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82",
+              "packaging": "zip",
+              "sourceHash": "0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82",
+              "s3BucketParameter": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82S3Bucket0E8A9C99",
+              "s3KeyParameter": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82S3VersionKeyDFF70B5B",
+              "artifactHashParameter": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82ArtifactHash5637E893"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "Object.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:39)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/store-bucket-OAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestorebucketOAI57B47064",
+            "trace": [
+              "new OriginAccessIdentity (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.js:45:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:13:31)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/static-bucket-253-v2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestaticbucket253v2D5849EE5",
+            "trace": [
+              "new Bucket (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.js:666:26)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:14:28)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/static-bucket-253-v2/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestaticbucket253v2PolicyB67066F6",
+            "trace": [
+              "new BucketPolicy (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.js:45:25)",
+              "Bucket.addToResourcePolicy (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.js:169:27)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:20:20)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/store-bucket-disribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestorebucketdisributionCFDistributionDDDFFDC6",
+            "trace": [
+              "new CloudFrontWebDistribution (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-cloudfront/lib/web-distribution.js:326:30)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:25:30)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/store-bucket-deployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestorebucketdeploymentAwsCliLayerF7E5ABD0",
+            "trace": [
+              "new LayerVersion (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/layers.js:54:26)",
+              "new AwsCliLayer (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:81:22)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/storeStaticWebsite/store-bucket-deployment/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storeStaticWebsitestorebucketdeploymentCustomResource8C1E7BB1",
+            "trace": [
+              "new CustomResource (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/custom-resource.js:49:25)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:117:19)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73S3Bucket6FE8CBF7",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new LayerVersion (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/layers.js:47:33)",
+              "new AwsCliLayer (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:81:22)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73S3VersionKey71C12446",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new LayerVersion (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/layers.js:47:33)",
+              "new AwsCliLayer (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:81:22)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/fb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb266d6a37fc87fd6f6909ec07fc8527624f558206af351ff560826867617a73ArtifactHashE5DCACB4",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new LayerVersion (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/layers.js:47:33)",
+              "new AwsCliLayer (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.js:14:9)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:81:22)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82S3Bucket0E8A9C99",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "Object.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:39)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82S3VersionKeyDFF70B5B",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "Object.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:39)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/AssetParameters/0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0231049800ddff422ad5823134fc4204ef9f24a1aaf2efc266fbd82edaa5ba82ArtifactHash5637E893",
+            "trace": [
+              "new FileAssetParameters (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "MyStaticSiteStack.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "Object.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:62:31)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:39)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-iam/lib/role.js:63:22)",
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:35)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-iam/lib/policy.js:57:26)",
+              "Role.addToPrincipalPolicy (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-iam/lib/role.js:247:34)",
+              "Grant.addToPrincipal (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.js:102:65)",
+              "Grant.addToPrincipalOrResource (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-iam/lib/grant.js:50:30)",
+              "Import.grant (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.js:487:31)",
+              "Import.grantRead (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3/lib/bucket.js:302:21)",
+              "Asset.grantRead (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:99:21)",
+              "Object.bind (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:69:23)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:101:39)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/function.js:172:26)",
+              "SingletonFunction.ensureLambda (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:164:16)",
+              "new SingletonFunction (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:32:36)",
+              "new BucketDeployment (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:78:25)",
+              "new StaticSite (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/static-site.js:36:9)",
+              "new MyStaticSiteStack (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:9:9)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:13:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stage.js:104:41)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:14:5)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/MyStoreStaticWebsite/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/node_modules/@aws-cdk/core/lib/stage.js:104:41)",
+              "Object.<anonymous> (/Users/morgan_cooper/Documents/cloudx-aws-practitioner-for-js/shop-react-redux-cloudfront/cdk/index.js:14:5)",
+              "Module._compile (node:internal/modules/cjs/loader:1159:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1213:10)",
+              "Module.load (node:internal/modules/cjs/loader:1037:32)",
+              "Module._load (node:internal/modules/cjs/loader:878:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ]
+      },
+      "displayName": "MyStoreStaticWebsite"
+    }
+  }
+}
