@@ -25,6 +25,9 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <main>
         <Container sx={{ pb: 8 }} maxWidth="md">
           {children}
+          <h1>
+            Hello World, I have been deployed to cloudfront using AWS-CDK cli
+          </h1>
         </Container>
       </main>
       <Box
